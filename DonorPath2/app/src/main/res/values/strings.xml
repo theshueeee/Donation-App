@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DonorPath</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="profile_name">Sarah Russell</string>
+    <string name="email_label">Email:</string>
+    <string name="profile_email">sarahrussell123@gmail.com</string>
+    <string name="phone_label">Phone Number:</string>
+    <string name="profile_phone">+6012-123-4567</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="help_support">Help and Support</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
+
+    <string name="welcome_message">Hello, Sarah...</string>
+    <string name="search_hint">Search</string>
+    <string name="featured_section_title">Featured</string>
+    <string name="featured_title">Palestine: Give life-saving aid</string>
+    <string name="donate_button_text">Donate</string>
+    <string name="ngo_directory">NGO Directory</string>
+    <string name="my_donations">My Donations</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="recent_visits_title">Recent Visits</string>
+    <string name="recent_title">Global: Share school meals</string>
+    <string name="recent_description">Global Schools Foundation</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+
+</resources>
