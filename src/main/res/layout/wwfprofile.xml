@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007BFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/white"
+            android:contentDescription="Back Button"
+            android:textColor="@color/white"
+            app:iconTint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="NGO Profile Screen"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Menu Button"
+            android:src="@drawable/ic_menu" />
+    </LinearLayout>
+
+    <!-- NGO Logo -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:contentDescription="WWF Logo"
+        android:src="@drawable/wwf" />
+
+    <!-- NGO Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="WWF-Malaysia"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- About Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:padding="16dp"
+        android:text="About:\nWWF-Malaysia was established in 1972 and is part of WWF, (World Wide Fund for Nature), the international conservation organisation. Working to sustain the natural world for the benefit of people and wildlife, WWF-Malaysia’s efforts to conserve nature focus on six major themes: forests, oceans, wildlife, food, climate and energy, as well as freshwater."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Donate Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Donate now!"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <!-- Rating Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Don't forget the rate after your donation"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0" />
+
+    <!-- Feedback Section -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:gravity="top"
+        android:hint="Tell us your experience of donating"
+        android:minLines="3"
+        android:padding="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007BFF"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/white"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Article"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:contentDescription="Menu Button" />
+    </LinearLayout>
+
+    <!-- Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Text Content -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="14dp"
+                android:text="Understanding Global Poverty"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Global poverty is a pervasive issue that affects millions of people worldwide, presenting a significant challenge for governments, organizations, and individuals alike. Poverty refers to the condition in which people lack the financial resources to meet basic needs such as food, shelter, clothing, and access to healthcare and education. It is often accompanied by other factors like poor living conditions, social exclusion, and limited access to opportunities for economic mobility."
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="10dp"
+                android:text="Causes of Global Poverty"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="10dp"
+                android:text="1. Economic Inequality: One of the primary drivers of poverty is economic inequality, where a small portion of the population controls a significant amount of wealth, leaving a large percentage of people struggling to survive. This inequality can result from unequal distribution of resources, lack of access to quality education, and discriminatory practices."
+                android:textSize="16sp" />
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Image related to poverty"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
