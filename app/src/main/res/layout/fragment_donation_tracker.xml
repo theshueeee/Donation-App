@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007BFF"
+            android:padding="25dp"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Feedback"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <!-- Total Donations -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#28a745"
+            android:padding="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/donationCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Impact: 0 feedbacks"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Search and Filter Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Search"
+                android:padding="10dp"
+                android:drawablePadding="8dp" />
+
+            <!-- Filter Icon -->
+
+        </LinearLayout>
+
+        <!-- Feedback RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feedbackRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

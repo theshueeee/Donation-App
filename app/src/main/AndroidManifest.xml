@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permission to access the Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DonorPath"
+        tools:targetApi="31">
+        <activity
+            android:name=".profilepage"
+            android:exported="false" />
+        <activity
+            android:name=".editProfile"
+            android:exported="false" /> <!-- Splash Screen (Launcher Activity) -->
+        <activity
+            android:name=".splashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Sign Up Activity -->
+        <activity
+            android:name=".signup"
+            android:exported="true" /> <!-- Login Activity -->
+        <activity
+            android:name=".Login"
+            android:exported="true" /> <!-- Profile Activity -->
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
